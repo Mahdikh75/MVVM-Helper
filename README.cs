@@ -1,5 +1,4 @@
-# MVVM-Helper
-Tools WPF for Pattern MVVM (BaseViewModel &amp; RelayCommand)
+// MVVM-Helper
 
 // BaseViewModel (Abstract Class / Method Main ---> SetPropertyChange())
 
@@ -14,21 +13,21 @@ Tools WPF for Pattern MVVM (BaseViewModel &amp; RelayCommand)
 
 // RelayCmmand
 
-  private ICommand close;
-  public ICommand Close
-  {
-      get
-      {
-          if (close == null)
-              close = new RelayCommand(MethodClose, CanMethodClose);
-          return close;
-      }
-  }
-  private void MethodClose(object obj)
-  {
-      (obj as Window).Close();
-  }
-  private bool CanMethodClose(object obj)
-  {
-      return true;
-  }
+ private ICommand close;
+ public ICommand Close
+ {
+     get
+     {
+         if (close == null)
+             close = new RelayCommand(MethodClose, CanMethodClose);
+         return close;
+     }
+ }
+ private void MethodClose(object obj)
+ {
+     (obj as Window).Close();
+ }
+ private bool CanMethodClose(object obj)
+ {
+     return true;
+ }
