@@ -1,8 +1,7 @@
 # MVVM-Helper
 Tools WPF for Pattern MVVM (BaseViewModel &amp; RelayCommand)
 
--------
-BaseViewModel (Abstract Class / Method Main ---> SetPropertyChange())
+// BaseViewModel (Abstract Class / Method Main ---> SetPropertyChange())
 
  public class MainViewModel : BaseViewModel
  {
@@ -13,9 +12,7 @@ BaseViewModel (Abstract Class / Method Main ---> SetPropertyChange())
    }
  }
 
--------
-
-RelayCmmand
+// RelayCmmand
 
   private ICommand close;
   public ICommand Close
